@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>YooHoo — Private Web Project</title>
+<meta name="description" content="YooHoo 是一个以隐私为重点的非商业 Web 开发项目。">
+<style>
+:root{--bg:#f7f5fa;--card:#fff;--text:#292431;--muted:#746d7d;--accent:#76549a;--soft:#eee8f4;--line:#e6dfeb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+nav{position:sticky;top:0;z-index:5;background:#ffffffee;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{max-width:960px;margin:auto;padding:0 20px;height:60px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:800;font-size:20px}.nav a{color:var(--text);text-decoration:none;margin-left:18px;font-size:14px}
+main{max-width:960px;margin:auto;padding:55px 20px 70px}.hero{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:42px 36px;box-shadow:0 14px 40px #49365d10}.tag{display:inline-block;background:var(--soft);color:var(--accent);padding:7px 12px;border-radius:99px;font-size:12px;font-weight:800}
+h1{font-size:56px;line-height:1;margin:18px 0 7px;letter-spacing:-2px}.sub{font-size:21px;color:var(--muted);margin:0}.lead{font-size:17px;line-height:1.9;color:#57505f;max-width:760px;margin:24px 0 0}
+.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}.tags span{padding:8px 12px;background:#faf8fc;border:1px solid var(--line);border-radius:10px;font-size:13px;color:#665d6d}
+section{margin-top:24px;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px 30px}.title{font-size:25px;margin:0 0 10px}.text{color:#625b69;line-height:1.85;margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}.item{background:#faf9fb;border:1px solid var(--line);border-radius:17px;padding:20px}.item h3{margin:0 0 8px;font-size:17px}.item p{margin:0;color:#665f6c;line-height:1.7;font-size:14px}
+.arch{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}.node{text-align:center;padding:20px;background:#faf9fb;border:1px solid var(--line);border-radius:16px}.node strong{display:block;margin-bottom:7px}.node span{font-size:13px;color:var(--muted)}
+.status{margin-top:18px;padding:16px 18px;border-radius:15px;background:var(--soft);color:#5f5269;line-height:1.75;font-size:14px}
+footer{text-align:center;color:#8b8491;font-size:13px;padding:25px 20px 35px}
+@media(max-width:700px){main{padding:25px 14px 50px}.hero{padding:30px 22px}h1{font-size:44px}.grid,.arch{grid-template-columns:1fr}.nav a{margin-left:10px;font-size:13px}}
+</style>
+</head>
+<body>
+<nav><div class="nav"><div class="logo">YooHoo</div><div><a href="#project">项目</a><a href="#technology">技术</a><a href="#privacy">隐私</a></div></div></nav>
+<main>
+<section class="hero" id="project">
+<span class="tag">NON-COMMERCIAL SOFTWARE DEVELOPMENT PROJECT</span>
+<h1>YooHoo</h1>
+<p class="sub">Private Web Project</p>
+<p class="lead">一个以隐私为重点的 Web 开发项目。YooHoo 是一个非商业 Web 项目，用于探索私密交流场景中的网页架构、客户端加密、接口与数据存储等技术。</p>
+<div class="tags"><span>Web Development</span><span>Privacy</span><span>Client-side Encryption</span><span>Cloudflare Pages</span><span>Workers</span><span>D1</span></div>
+</section>
+
+<section>
+<h2 class="title">项目简介</h2>
+<p class="text">YooHoo 以私密 Web 应用为开发场景，重点研究移动端网页交互、账户访问、内容发布、回复系统以及前后端数据通信。项目为个人软件开发实践，不提供商业服务、付费功能或广告。</p>
+<div class="grid">
+<div class="item"><h3>Web Application</h3><p>研究轻量化 Web 应用的信息结构与移动端交互。</p></div>
+<div class="item"><h3>Private Community</h3><p>探索私密交流场景中的访问控制与内容组织。</p></div>
+<div class="item"><h3>Software Development</h3><p>持续测试前端、接口和数据层的设计方案。</p></div>
+</div>
+</section>
+
+<section id="technology">
+<h2 class="title">技术架构</h2>
+<p class="text">项目采用前后端分离的 Web 架构，将页面、接口与数据存储划分为相互独立的层。</p>
+<div class="arch"><div class="node"><strong>Frontend</strong><span>HTML · CSS · JavaScript</span></div><div class="node"><strong>API</strong><span>Cloudflare Workers</span></div><div class="node"><strong>Storage</strong><span>Cloudflare D1</span></div></div>
+</section>
+
+<section id="privacy">
+<h2 class="title">隐私与客户端加密</h2>
+<p class="text">YooHoo 的开发方向包含客户端加密方案研究：敏感内容可以在浏览器端进行处理后再与服务端通信，以减少服务端直接接触明文内容的需求。具体实现会随着项目开发继续调整。</p>
+<div class="status"><strong>当前性质：</strong>非商业软件开发项目。此页面本身为公开项目说明页面，不要求访客登录，也不包含付费服务。</div>
+</section>
+
+<section>
+<h2 class="title">开发目标</h2>
+<div class="grid">
+<div class="item"><h3>移动端体验</h3><p>优化手机浏览器中的布局、触控操作和页面加载体验。</p></div>
+<div class="item"><h3>隐私设计</h3><p>研究客户端数据处理、访问控制和内容保护。</p></div>
+<div class="item"><h3>架构实践</h3><p>实践 Pages、Workers 与 D1 组成的边缘 Web 架构。</p></div>
+</div>
+</section>
+</main>
+<footer>YooHoo · Private Web Project · Non-commercial Software Development</footer>
+</body>
+</html>
